@@ -13,13 +13,15 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 import { ConexionService } from './services/conexion.service';
 import { ListaComponent } from './components/lista/lista.component';
-import { ListaAddComponent } from './components/lista-add/lista-add.component'
+import { ListaAddComponent } from './components/lista-add/lista-add.component';
+import { HeaderComponent } from './components/header/header.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaComponent,
-    ListaAddComponent
+    ListaAddComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
