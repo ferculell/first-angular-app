@@ -1,6 +1,9 @@
 <div class="alert alert-primary" role="alert" *ngFor="let item of items">
-    {{item.name}} - {{item.id}}
+    {{item.name}}
     <div class="float-rigth" (click)="eliminar(item)">
         <i class="far fa-trash-alt"></i>
+    </div>
+    <div class="float-rigth mx-2" (click)="editar(item)">
+        <i class="far fa-edit"></i>
     </div>
 </div>
