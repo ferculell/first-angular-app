@@ -10,7 +10,7 @@ export class ListaComponent implements OnInit {
 
   items:any;
 
-  constructor(private conexion:ConexionService) {
+  constructor( private conexion:ConexionService ) {
     this.conexion.listaItems().subscribe( item => {
       this.items = item;
     });
