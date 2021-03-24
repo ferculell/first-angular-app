@@ -11,7 +11,9 @@ export class ListaComponent implements OnInit {
   items:any;
 
   constructor(private conexion:ConexionService) {
-    this.items = this.conexion.listaItems();
+    this.conexion.listaItems().subscribe( item => {
+      this.items = item;
+    });
   }
 
   ngOnInit(): void {
