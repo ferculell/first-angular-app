@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "first-angular-app-db": {
+      "hosting": {
+        "first-angular-app": [
+          "first-angular-app-db"
+        ]
+      }
+    }
+  }
+}
